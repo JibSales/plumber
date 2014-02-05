@@ -1,0 +1,11 @@
+{
+  "name": "plumber",
+  "version": "0.0.0",
+  "description": "A TCP to Websocket proxy",
+  "main": "./lib/plumber.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sean R. Quinn <sean@jibsales.com>",
+  "license": "MIT"
+}
