@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sean R. Quinn <sean@jibsales.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "sockjs": "~0.3.8",
+    "async": "~0.2.10"
+  },
+  "devDependencies": {
+    "should": "~3.1.2",
+    "mocha": "~1.17.1"
+  }
 }
