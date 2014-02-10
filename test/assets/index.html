@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>chucks</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  <script src="http://cdn.sockjs.org/sockjs-0.3.min.js"></script>
+</head>
+<body>
+  <script>
+    
+    (function () {
+      
+      // -- Setup connection to SockJS
+      var sock = new SockJS('http://localhost:3000/sock');
+
+      sock.onopen = function() {
+        console.log('open');
+      }
+
+      // -- Listen for incoming messages
+      sock.onmessage = function(e) {
+        console.log(e.data);
+      }
+
+      // -- Do stuff when connection closes
+      sock.onclose = function() {
+        console.log('close');
+      }
+
+    })();
+
+  </script>
+  
+</body>
+</html>
